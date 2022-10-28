@@ -1,12 +1,12 @@
-abstract class BankAccount {
-    abstract double getTotalBalance();
+interface BankAccount {
+    double getTotalBalance();
 
-    abstract void debit(double amount);
+    void debit(double amount);
 
-    abstract void credit(double amount);
+    void credit(double amount);
 }
 
-public class Account extends BankAccount {
+public class Account implements BankAccount {
     private final int accountNumber;
     private final int pin;
     private double totalBalance;
