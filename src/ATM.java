@@ -27,7 +27,7 @@ public class ATM {
         while (isRunning) {
             int tries = 0;
             while (!userAuthenticated && tries < 3) {
-                screen.displayMessageLine("Welcome!");
+                screen.displayMessageLine("\nWelcome!");
                 authenticateUser();
                 tries++;
             }
@@ -36,9 +36,9 @@ public class ATM {
                 performTransactions();
                 userAuthenticated = false;
                 currentAccountNumber = 0;
-                screen.displayMessageLine("Thank you! Goodbye!");
+                screen.displayMessageLine("Thank you! Goodbye!\n");
             } else {
-                screen.displayMessageLine("Too many failed attempts. Goodbye!");
+                screen.displayMessageLine("Too many failed attempts. Goodbye!\n");
             }
         }
     }
@@ -91,8 +91,8 @@ public class ATM {
                     userExited = true;
                     break;
                 case 5:
-                    isRunning = false;
                     stop();
+                    userExited = !isRunning;
                     break;
                 default:
                     screen.displayMessageLine("You did not enter a valid selection. Try again.");
@@ -116,7 +116,7 @@ public class ATM {
     }
 
     private int displayMainMenu() {
-        screen.displayMessageLine("Main menu:");
+        screen.displayMessageLine("\nMain menu:");
         screen.displayMessageLine("1 - View my balance");
         screen.displayMessageLine("2 - Withdraw cash");
         screen.displayMessageLine("3 - Deposit funds");

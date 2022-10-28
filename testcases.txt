@@ -1,0 +1,198 @@
+# Testcases
+
+## Testcase 1
+
+### Input
+
+12345
+54321
+1
+4
+
+### Output
+
+Welcome!
+Please enter your account number: 12345
+Please enter your PIN: 54321
+
+Main menu:
+1 - View my balance
+2 - Withdraw cash
+3 - Deposit funds
+4 - Exit
+5 - Stop ATM
+Enter a choice: 1
+$1,200.00
+
+Main menu:
+1 - View my balance
+2 - Withdraw cash
+3 - Deposit funds
+4 - Exit
+5 - Stop ATM
+Enter a choice: 4
+Exiting the system...
+Thank you! Goodbye!
+
+Welcome!
+Please enter your account number:
+
+## Testcase 2
+
+### Input
+
+12345
+98888
+
+### Output
+
+Welcome!
+Please enter your account number: 12345
+Please enter your PIN: 98888
+Invalid account number or PIN. Please try again.
+
+Welcome!
+Please enter your account number:
+
+## Testcase 3
+
+### Input
+
+12345
+54321
+1
+2
+130
+
+### Output
+
+Welcome!
+Please enter your account number: 12345
+Please enter your PIN: 54321
+
+Main menu:
+1 - View my balance
+2 - Withdraw cash
+3 - Deposit funds
+4 - Exit
+5 - Stop ATM
+Enter a choice: 1
+$1,200.00
+
+Main menu:
+1 - View my balance
+2 - Withdraw cash
+3 - Deposit funds
+4 - Exit
+5 - Stop ATM
+Enter a choice: 2
+Enter the amount to withdraw:
+130
+Dispensing cash:
+1 x 10
+1 x 20
+1 x 100
+Withdrawal successful!
+Exiting the system...
+Thank you! Goodbye!
+
+
+Welcome!
+Please enter your account number:
+
+## Testcase 4
+
+### Input
+
+12345
+54321
+1
+3
+140
+
+### Output
+
+Welcome!
+Please enter your account number: 12345
+Please enter your PIN: 54321
+
+Main menu:
+1 - View my balance
+2 - Withdraw cash
+3 - Deposit funds
+4 - Exit
+5 - Stop ATM
+Enter a choice: 1
+$1,200.00
+
+Main menu:
+1 - View my balance
+2 - Withdraw cash
+3 - Deposit funds
+4 - Exit
+5 - Stop ATM
+Enter a choice: 3
+Enter the amount to deposit:
+140
+Deposit successful!
+Exiting the system...
+Thank you! Goodbye!
+
+
+Welcome!
+Please enter your account number:
+
+## Testcase 5
+
+### Input
+
+12345
+54321
+4
+
+### Output
+
+Welcome!
+Please enter your account number: 12345
+Please enter your PIN: 54321
+
+Main menu:
+1 - View my balance
+2 - Withdraw cash
+3 - Deposit funds
+4 - Exit
+5 - Stop ATM
+Enter a choice: 4
+Exiting the system...
+Thank you! Goodbye!
+
+
+Welcome!
+Please enter your account number:
+
+## Testcase 6
+
+### Input
+
+12345
+54321
+5
+87564 (whatever the password to stop the ATM is)
+
+### Output
+
+Welcome!
+Please enter your account number: 12345
+Please enter your PIN: 54321
+
+Main menu:
+1 - View my balance
+2 - Withdraw cash
+3 - Deposit funds
+4 - Exit
+5 - Stop ATM
+Enter a choice: 5
+Enter the password to stop the ATM:
+87564
+Thank you! Goodbye!
+

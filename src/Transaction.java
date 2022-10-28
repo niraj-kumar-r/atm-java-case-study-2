@@ -1,3 +1,6 @@
+/**
+ * An abstract class that represents a transaction. Can be extended to create and execute different kinds of transactions.
+ */
 public abstract class Transaction {
     protected final int accountNumber;
 
@@ -19,5 +22,8 @@ public abstract class Transaction {
         return screen;
     }
 
+    /**
+     * An abstract method that can help execute the different kinds of transactions in each subclass.
+     */
     abstract void execute();
 }
