@@ -5,7 +5,7 @@
 - [Overview](#overview)
     - [Problem Statement](#problem-statement)
     - [Solution](#solution)
-        - [OOP Concepts and their ](#oop-concepts-and-their-implementation)
+        - [OOP Concepts and their implementation](#oop-concepts-and-their-implementation)
         - [Classes and methods](#classes-and-methods)
 
 ## Overview
