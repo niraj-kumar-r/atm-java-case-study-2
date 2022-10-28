@@ -78,27 +78,38 @@ screen,and the computer’s keyboard to simulate the ATM’s keypad.
       objects of another class. I have used inheritance to extend the functionality of the classes. For eg : I have made
       a general purpose abstract class `Transaction` which has a method called `execute()`. I have then extended this
       class in the classes `Deposit`, `Withdraw`, to `execute` the transaction in corresponding ways.
-- **Polymorphism** : Polymorphism is the ability of an object to take on many forms. We have two
-  types of polymorphism in Java: compile-time polymorphism and runtime polymorphism. We use
-  method overloading and method overriding to achieve polymorphism in Java.
-    - **Implementation** : In this project, I have used polymorphism to achieve compile-time
-      polymorphism. I have used method overloading to achieve polymorphism. For eg : I have made a method called
-      `displayMessageLine()` in the class `AtmScreen`. I have then overloaded this method to display different messages
-      in the class.
-  ```java
-  public class Screen implements AtmScreen {
-    public void displayMessageLine(String message) {
-        System.out.println(message);
-    }
-    public void displayMessageLine(int message) {
-        System.out.println(message);
-    }
+  - **Polymorphism** : Polymorphism is the ability of an object to take on many forms. We have two
+    types of polymorphism in Java: compile-time polymorphism and runtime polymorphism. We use
+    method overloading and method overriding to achieve polymorphism in Java.
+      - **Implementation** : In this project, I have used polymorphism to achieve compile-time
+        polymorphism. I have used method overloading to achieve polymorphism. For eg : I have made a method called
+        `displayMessageLine()` in the class `AtmScreen`. I have then overloaded this method to display different messages
+        in the class.
+    ```java
+    public class Screen implements AtmScreen {
+      public void displayMessageLine(String message) {
+          System.out.println(message);
+      }
+      public void displayMessageLine(int message) {
+          System.out.println(message);
+      }
 
-    public void displayMessageLine(double message) {
-        System.out.println(message);
+      public void displayMessageLine(double message) {
+          System.out.println(message);
+      }
     }
-  }
-    ```
+      ```
+    ```java
+    public class BankDatabase {
+      private void addAccount(Account account) {
+          accounts.add(account);
+      }
+
+      private void addAccount(int accountNumber, int pin, double totalBalance) {
+          addAccount(new Account(accountNumber, pin, totalBalance));
+      }
+    }
+      ```
 
 #### Classes and methods
 

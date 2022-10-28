@@ -4,6 +4,8 @@ import java.util.List;
 public class BankDatabase {
     private final List<Account> accounts = new ArrayList<>();
 
+    //We add these two accounts by default for testing purposes. In practice the bank would have to add many accounts to the database.
+    //But that is not the primary focus of this project.
     public BankDatabase() {
         addAccount(12345, 54321, 1200.0);
         addAccount(98765, 56789, 200.0);
@@ -16,11 +18,6 @@ public class BankDatabase {
     private void addAccount(int accountNumber, int pin, double totalBalance) {
         addAccount(new Account(accountNumber, pin, totalBalance));
     }
-    public void addAccount(int accountNumber, int pin) {
-        Account account = new Account(accountNumber, pin, 0.0);
-        addAccount(account);
-    }//adds an account with 0 balance hence public
-
     private Account getAccount(int accountNumber) {
         for (Account currentAccount : accounts) {
             if (currentAccount.getAccountNumber() == accountNumber) {
