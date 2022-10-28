@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BankDatabase {
-    private final List<Account> accounts = new ArrayList<Account>();
+    private final List<Account> accounts = new ArrayList<>();
 
     public BankDatabase() {
         addAccount(12345, 54321, 1200.0);
@@ -19,7 +19,7 @@ public class BankDatabase {
     public void addAccount(int accountNumber, int pin) {
         Account account = new Account(accountNumber, pin, 0.0);
         addAccount(account);
-    }//adds user created account with 0 balance hence public
+    }//adds an account with 0 balance hence public
 
     private Account getAccount(int accountNumber) {
         for (Account currentAccount : accounts) {

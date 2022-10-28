@@ -102,6 +102,8 @@ screen,and the computer’s keyboard to simulate the ATM’s keypad.
 
 #### Classes and methods
 
+![The class diagram](src_class_diagram.png)
+
 - **Main** : This is the main class which contains the main method. This class is responsible for
   creating the objects of the other classes and calling the methods of those classes.
 - **ATM** : This class contains the methods to perform the operations of the ATM. This class
