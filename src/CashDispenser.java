@@ -6,7 +6,7 @@ public class CashDispenser implements AtmCashDispenser {
     private final int[] cashAvailable = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
     private final int[] cashAvailableDenominations = {1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000};
     private final int[] cashAvailableMax = {100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100};
-    //  cashAvailableMax indicates the max amount of bills the dispenser can hold
+    //  cashAvailableMax indicates the max amount of bills (of a particular denomination) the dispenser can hold
     private int totalCashAvailable = 0;
 
     public CashDispenser() {
